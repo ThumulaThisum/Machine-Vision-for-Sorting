@@ -1,29 +1,67 @@
 # Machine-Vision-for-Sorting
 
-This repository contains three object detection models that I have trained to sort mechanical fasteners such as bolts, screws, nuts, washers, and bearings. 
+This repository contains three object detection models trained for sorting mechanical fasteners such as bolts, screws, nuts, washers, and bearings. The models are designed to automate and enhance the sorting process in machine vision applications.
 
+## Setting Up the Environment
 
-Before loading the models I recommend creating a virtual environment in command prompt to install the required packages and activate the virtual environemnt as the kernel in IDEs like VScode and anaconda. 
+Before loading the models, it's recommended to create a virtual environment for installing the required packages. You can set up and activate this virtual environment as the kernel in IDEs like VSCode and Anaconda for optimal compatibility.
 
+### YOLO (YOLOv5)
 
-1. Yolo - yolov5 folder contains a requirements.txt file that has the needed libraries that you need to install to load the yolo model.
+The `yolov5` folder contains a `requirements.txt` file that lists the necessary libraries for running the YOLO model. Install them with the following command:
 
-2. SDD - pip install tensorflow opencv-python protobuf==3.20.*
+```bash
+pip install -r yolov5/requirements.txt
+```
 
-3. FasterRCNN -
+### Single Shot Detector (SSD)
 
-3.1 Clone the TensorFlow Models repository and proceed to one of the installation options.
-  git clone https://github.com/tensorflow/models.git
+To use the SSD model, install the following packages:
 
-3.2 Python Package Installation
-  cd models/research
+```bash
+pip install tensorflow opencv-python protobuf==3.20.*
+```
 
-Download the protobuf version from https://protobuf.dev/downloads/ (or by searching Google Protocol Buffers). After downloading the protoc.exe run the following command.
+### Faster R-CNN
 
-  (file location of protoc.exe) object_detection/protos/*.proto --python_out=.
+1. **Clone the TensorFlow Models Repository:**
 
-3.3 Copy object_detection/packages/tf2/setup.py file and paste it to models/research folder 
+   ```bash
+   git clone https://github.com/tensorflow/models.git
+   ```
 
-3.4 Install the object detection API 
-  python -m pip install --use-feature=2020-resolver .
+2. **Python Package Installation:**
 
+   Navigate to the `models/research` directory:
+
+   ```bash
+   cd models/research
+   ```
+
+3. **Install Protocol Buffers:**
+
+   Download the protobuf compiler from [Protocol Buffers Downloads](https://protobuf.dev/downloads/). After downloading, run the following command to compile the protocol buffers:
+
+   ```bash
+   <file location of protoc.exe> object_detection/protos/*.proto --python_out=.
+   ```
+
+4. **Setup Configuration:**
+
+   Copy the `object_detection/packages/tf2/setup.py` file to the `models/research` folder:
+
+   ```bash
+   cp object_detection/packages/tf2/setup.py .
+   ```
+
+5. **Install the Object Detection API:**
+
+   Finally, install the TensorFlow Object Detection API:
+
+   ```bash
+   python -m pip install --use-feature=2020-resolver .
+   ```
+
+## Usage
+
+Once the environment and packages are set up, you can load and use each model for fastener detection. Each model folder contains sample code and configuration files to help you get started quickly.
