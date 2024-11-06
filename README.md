@@ -53,8 +53,9 @@ pip install tensorflow opencv-python protobuf==3.20.*
    ```bash
    cp object_detection/packages/tf2/setup.py .
    ```
-
-5. **Install the Object Detection API:**
+   You can either run the code or copy and paste it manually.
+   
+6. **Install the Object Detection API:**
 
    Finally, install the TensorFlow Object Detection API:
 
