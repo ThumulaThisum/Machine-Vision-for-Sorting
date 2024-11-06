@@ -1,0 +1,25 @@
+item {
+  id: 1
+  name: 'nut'
+}
+
+item {
+  id: 2
+  name: 'bolt'
+}
+
+item {
+  id: 3
+  name: 'screw'
+}
+
+item {
+  id: 4
+  name: 'washer'
+}
+
+item {
+  id: 5
+  name: 'bearing'
+}
+
