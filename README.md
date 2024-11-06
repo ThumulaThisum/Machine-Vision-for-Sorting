@@ -1,10 +1,9 @@
 # Machine-Vision-for-Sorting
 
-This repository contains three object detection models trained for sorting mechanical fasteners such as bolts, screws, nuts, washers, and bearings. The models are designed to automate and enhance the sorting process in machine vision applications.
-
+This repository contains three object detection models trained for sorting mechanical fasteners such as bolts, screws, nuts, washers, and bearings. 
 ## Setting Up the Environment
 
-Before loading the models, it's recommended to create a virtual environment for installing the required packages. You can set up and activate this virtual environment as the kernel in IDEs like VSCode and Anaconda for optimal compatibility.
+Before loading the models, it's recommended to create a virtual environment for installing the required packages. You can set up and activate this virtual environment as the kernel in IDEs like VSCode and Anaconda.
 
 ### YOLO (YOLOv5)
 
